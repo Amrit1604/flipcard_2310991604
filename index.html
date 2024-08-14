@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://t3.ftcdn.net/jpg/05/28/86/66/360_F_528866602_aiVwnOnkooTrqo3MgicCf83SVVzt1Gnd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/834/677/desktop-wallpaper-business-card-backgrounds-awesome-business-card-backgrounds-design-unique-background.jpg);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+}
+
+.card__button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f76c6c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card__button:hover {
+    background-color: #ff4c4c;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="card-grid">
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFEB7ph4JNi3TvoWTapPjI424iBSTSYwzMmw&s" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo2</p>
+                <p class="card__description">Description for Card 2</p>
+                <a href="https://en.wikipedia.org/wiki/Satoru_Gojo"class="card__button">Button 1</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://static.fandomspot.com/images/08/18749/25-tanjiro-kamado-demon-slayer-anime.jpg" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo3</p>
+                <p class="card__description">Description for Card 3</p>
+                <a href="https://en.wikipedia.org/wiki/Satoru_Gojo"class="card__button">Button 1</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/05/luffy-most-popular-anime-characters.jpg" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo4</p>
+                <p class="card__description">Description for Card 4</p>
+                <a href="https://en.wikipedia.org/wiki/Satoru_Gojo"class="card__button">Button 1</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/01/bleach-1.jpg" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo5</p>
+                <p class="card__description">Description for Card 5</p>
+                <a href="https://en.wikipedia.org/wiki/Satoru_Gojo"class="card__button">Button 1</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+        <div class="card">
+            <img style="object-fit: cover;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2163589b-bd1f-44cb-9a37-4b02c4ad7053/dg8snh5-c45d4262-020d-4ff0-bee1-b8d479c5861b.jpg/v1/fill/w_600,h_1050,q_75,strp/super_sayajin_son_goku_wallpaper_dragonball_z_by_sennexx_dg8snh5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNjM1ODliLWJkMWYtNDRjYi05YTM3LTRiMDJjNGFkNzA1M1wvZGc4c25oNS1jNDVkNDI2Mi0wMjBkLTRmZjAtYmVlMS1iOGQ0NzljNTg2MWIuanBnIiwiaGVpZ2h0IjoiPD0xMDUwIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yMTYzNTg5Yi1iZDFmLTQ0Y2ItOWEzNy00YjAyYzRhZDcwNTNcL3Nlbm5leHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.rnNAYyQZly9gwKDKGt9DCT-dDJRTCM00gXvCePZzpgw" alt="img">
+            <div class="card__content">
+                <p class="card__title">yoyo</p>
+                <p class="card__description">Description for Card 1</p>
+                <a href="https://en.wikipedia.org/wiki/Goku"class="card__button">Button 1</a>
+            </div> 
+        </div>
+    </div>
+    
+</body>
+</html>
